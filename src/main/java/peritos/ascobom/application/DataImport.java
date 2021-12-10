@@ -31,7 +31,7 @@ public class DataImport {
             //Instanciando um objeto ligado ao arquivo xlsx, conforme desejado
             Connection conexao = ConnectionFactory.getConnection();
 
-            String arquivo = "/home/hud/Desktop/ArquivosAscobom/inoperante.xlsx";
+            String arquivo = "C:\\Dev\\Arquivos\\inoperante.xlsx";
             XSSFWorkbook wb = new XSSFWorkbook(new FileInputStream(arquivo));
 
             String placa;
@@ -85,7 +85,7 @@ public class DataImport {
             Connection conexao = ConnectionFactory.getConnection();
 
             //Instanciando um objeto ligado ao arquivo xlsx, conforme desejado
-            String arquivo = "/home/hud/Desktop/ArquivosAscobom/termoCancelamento.xlsx";
+            String arquivo = "C:\\Dev\\Arquivos\\termoCancelamento.xlsx";
             XSSFWorkbook wb = new XSSFWorkbook(new FileInputStream(arquivo));
             String contrato;
             String placa;

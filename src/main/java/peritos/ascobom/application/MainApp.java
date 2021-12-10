@@ -49,7 +49,10 @@ public class MainApp {
 		Connection conexaoBD = ConnectionFactory.getConnection();
 
 		inicio = LocalDateTime.now();
-		processar(conexaoBD, "/home/hud/Desktop/ProjetoAscobom/ArquivosAscobom/ano2008.xlsx");
+		
+		processar(conexaoBD, "C:\\Dev\\Arquivos\\Tratadas\\ano2010Julho.xlsx");
+		
+		/*processar(conexaoBD, "/home/hud/Desktop/ProjetoAscobom/ArquivosAscobom/ano2008.xlsx");
 		processar(conexaoBD, "/home/hud/Desktop/ProjetoAscobom/ArquivosAscobom/ano2009.xlsx");
 		processar(conexaoBD, "/home/hud/Desktop/ProjetoAscobom/ArquivosAscobom/ano2010.xlsx");
 
@@ -71,6 +74,7 @@ public class MainApp {
 				"OUTUBRO 2011");
 		processar2011Contrato(conexaoBD, "/home/hud/Desktop/ProjetoAscobom/ArquivosAscobom/ano2011.xlsx",
 				"NOVEMBRO 2011");
+		*/
 
 		System.out.println("Fim execução");
 
@@ -82,7 +86,6 @@ public class MainApp {
 		long seconds = fim.until(inicio, ChronoUnit.SECONDS);
 
 		System.out.println("Tempo execução: " + minutes + " minutos " + seconds + " segundos.");
-
 	}
 
 	public static void processar(Connection conexaoBD, String arquivo) throws Exception {
